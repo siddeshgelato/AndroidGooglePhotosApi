@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">GooglePhotos</string>
+    <string name="client_id">577750995943-u3v37bki1c4gf9dh9hdb1ghfcthbvrk1.apps.googleusercontent.com</string>
+    <string name="client_secret">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</string>
+    <string name="downloading">Initializing payment</string>
+    <string name="filter">Filter  By</string>
+    <string name="select">Filter</string>
+    <string name="server_client_id">YOUR_SERVER_CLIENT_ID</string>
+    <string name="error_no_image_selected">No images selected for download</string>
+    <string name="label_select_album">Select Album</string>
+    <string name="label_continue">Continue</string>
+    <string name="label_back">Back</string>
+    <string name="msg_logged_out">Logged Out</string>
+    <string name="msg_loading_albums">Loading albums</string>
+    <string name="msg_no_album">No Albums Found</string>
+    <string name="error_no_response">Response is null</string>
+    <string name="msg_loading_images">Loading Images</string>
+    <string name="error_no_media">No Media Found</string>
+    <string name="error_connection">Error while connecting to google photos</string>
+    <string name="label_caption_here">Caption here</string>
+    <string name="msg_no_of_photos">no of photos</string>
+    <string name="msg_logged_in_as">Logged in as</string>
+    <string name="label_sign_up">Sign Up</string>
+    <string name="label_list_albums">List Albums</string>
+    <string name="label_filter_by_date_range">Filter By Date Range</string>
+    <string name="label_filter_by_topic">Filter By Topic</string>
+    <string name="label_pick">Pick</string>
+    <string name="label_press_to_download">Press to download</string>
+    <string name="msg_please_authenticate">Please authenticate with Google Photos to select files</string>
+    <string name="lable_conect_to_photos">Connect to Google Photos</string>
+    <string name="label_logout">Log Out</string>
+
+</resources>
