@@ -75,11 +75,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 PhotosLibraryClientFactory.createClient(googleSignInAccount)
             }
             val response = try {
-                 client?.listAlbums()
+                client?.listAlbums()
             } catch (e: UnauthenticatedException) {
                 PreferenceHelper.defaultPrefs(applicationc?.applicationContext!!).set(PreferenceHelper.ACCESS_TOKEN, "")
-                accountObserver.value =
-                    Resource.error(applicationc?.getString(R.string.msg_logged_out) ?: "", null)
+                setIsNotSignedIn()
                 return@launch
             }
             val albums = LinkedList<Album>()

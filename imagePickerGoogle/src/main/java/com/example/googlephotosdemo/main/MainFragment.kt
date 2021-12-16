@@ -147,7 +147,7 @@ class MainFragment : Fragment(), DatePickerDialog.OnDateSetListener {
 
 
         if (!PreferenceHelper.defaultPrefs(requireContext()).getString(PreferenceHelper.ACCESS_TOKEN, "").isNullOrEmpty()) {
-            viewModel.getAlbums(PreferenceHelper.defaultPrefs(requireContext()).getString(PreferenceHelper.ACCESS_TOKEN, "") ?: "")
+            viewModel.getAlbums(PreferenceHelper.defaultPrefs(requireContext()).getString(PreferenceHelper.ACCESS_TOKEN, "")  ?: "")
         } else {
             setUpuI()
         }

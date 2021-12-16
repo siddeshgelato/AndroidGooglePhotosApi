@@ -80,6 +80,7 @@ class GooglePhotoLauncherActivity : AppCompatActivity() {
                 when {
                     it != null -> when {
                         it.status == Status.SUCCESS -> {
+
                             sign_in_button.visibility = GONE
                             linearLayoutSigninHeader.visibility = GONE
                             viewPhotos.visibility = VISIBLE
@@ -178,13 +179,19 @@ class GooglePhotoLauncherActivity : AppCompatActivity() {
         } else {
             updateUI(null)
         }*/
+
+        val account = GoogleSignIn.getLastSignedInAccount(this)
+        if (account != null && PreferenceHelper.defaultPrefs(this)
+                .getString(PreferenceHelper.ACCESS_TOKEN, "")
+                .isNullOrEmpty()
+        ) {
+            signOut()
+        }
     }
 
     private fun updateUI(account: GoogleSignInAccount?) {
 
-        if (PreferenceHelper.defaultPrefs(this).getString(PreferenceHelper.ACCESS_TOKEN, "")
-                .isNullOrEmpty()
-        ) {
+        if (account != null) {
             viewModel.setIsSignedIn(account!!)
         } else {
             viewModel.setIsNotSignedIn()
