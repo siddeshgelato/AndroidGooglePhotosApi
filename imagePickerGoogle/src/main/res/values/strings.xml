@@ -1,11 +1,8 @@
 <resources>
     <string name="app_name">GooglePhotos</string>
-    <string name="client_id">577750995943-u3v37bki1c4gf9dh9hdb1ghfcthbvrk1.apps.googleusercontent.com</string>
-    <string name="client_secret">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</string>
     <string name="downloading">Initializing payment</string>
     <string name="filter">Filter  By</string>
     <string name="select">Filter</string>
-    <string name="server_client_id">YOUR_SERVER_CLIENT_ID</string>
     <string name="error_no_image_selected">No images selected for download</string>
     <string name="label_select_album">Select Album</string>
     <string name="label_continue">Continue</string>
